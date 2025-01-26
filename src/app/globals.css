@@ -9,7 +9,9 @@ body {
 }
 
 pre {
-  font-family: JetBrains Mono, monospace;
+  font-family:
+    JetBrains Mono,
+    monospace;
 }
 
 @layer base {
