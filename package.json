@@ -6,7 +6,17 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{html,css,js,ts,jsx,tsx}": [
+      "eslint --quiet --fix ."
+    ],
+    "*": [
+      "prettier --write --ignore-unknown ."
+    ]
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",
@@ -27,6 +37,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.1.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
     "postcss": "^8",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.10",
