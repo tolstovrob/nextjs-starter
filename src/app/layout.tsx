@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Rubik, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
+import APIProvider from '@/modules/APIProvider';
 
 const rubikSans = Rubik({
   variable: '--font-rubik-sans',
@@ -19,9 +20,11 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>): React.ReactNode => (
   <html lang='en'>
-    <body className={`${rubikSans.variable} ${jetbrainsMono.variable} antialiased`}>
-      {children}
-    </body>
+    <APIProvider>
+      <body className={`${rubikSans.variable} ${jetbrainsMono.variable} antialiased`}>
+        {children}
+      </body>
+    </APIProvider>
   </html>
 );
 
