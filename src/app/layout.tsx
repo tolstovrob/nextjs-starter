@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Rubik, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
-import APIProvider from '@/modules/APIProvider';
+import APIProvider from '@/app/providers/APIProvider';
 
 const rubikSans = Rubik({
   variable: '--font-rubik-sans',

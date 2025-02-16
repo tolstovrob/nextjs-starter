@@ -20,12 +20,12 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@services/*": ["./src/services/*"],
-      "@api/*": ["./src/services/api/*"],
-      "@models/*": ["./src/services/models/*"],
+      "@features/*": ["./src/features/*"],
+      "@api/*": ["./src/features/api/*"],
+      "@models/*": ["./src/features/models/*"],
       "@entities/*": ["./src/entities/*"],
-      "@components/*": ["./src/components/*"],
-      "@ui/*": ["./src/components/ui/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@ui/*": ["./src/shared/ui/*"],
       "@app/*": ["./src/app/*"],
       "@hooks/*": ["./src/hooks/*"]
     }

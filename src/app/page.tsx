@@ -1,6 +1,7 @@
 'use client';
-import { Button } from '@ui/button';
-import { fetchHealthChecker } from '@api/healthChecker';
+
+import { Button } from '@/shared/ui/button';
+import { fetchHealthChecker } from '@/features/api/healthChecker';
 import { useQuery } from '@tanstack/react-query';
 import { useState } from 'react';
 
