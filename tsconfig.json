@@ -24,7 +24,7 @@
       "@api/*": ["./src/features/api/*"],
       "@models/*": ["./src/features/models/*"],
       "@entities/*": ["./src/entities/*"],
-      "@shared/*": ["./src/shared/*"],
+      "@components/*": ["./src/shared/*"],
       "@ui/*": ["./src/shared/ui/*"],
       "@app/*": ["./src/app/*"],
       "@hooks/*": ["./src/hooks/*"]
