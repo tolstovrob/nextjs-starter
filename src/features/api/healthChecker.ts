@@ -1,10 +1,16 @@
 import { isMocksEnabled, type Response } from '@/features/api/base';
 
-export const fetchHealthChecker = async (): Response<{ message: string }> => {
+export const fetchHealthChecker = async (isSuccess: boolean): Response<{ message: string }> => {
   if (!isMocksEnabled) {
   }
 
-  return new Promise((resolve) =>
-    setTimeout(() => resolve({ status: 200, message: 'Hello, World!' }), 2000),
+  return new Promise((resolve, reject) =>
+    setTimeout(
+      () =>
+        isSuccess
+          ? resolve({ status: 200, message: 'Hello, World!' })
+          : reject('Internal fake error'),
+      2000,
+    ),
   );
 };
