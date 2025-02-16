@@ -1,4 +1,4 @@
-import { isMocksEnabled, type Response } from '@/features/api/base';
+import { isMocksEnabled, type Response } from '@/shared/api/base';
 
 export const fetchHealthChecker = async (isSuccess: boolean): Response<{ message: string }> => {
   if (!isMocksEnabled) {
